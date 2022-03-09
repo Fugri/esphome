@@ -21,7 +21,7 @@ void PulseMeterSensor::setup() {
 void PulseMeterSensor::loop() {
 
   
-  if ((this->debaunce < micros() - 60000000){
+  if ((this->debaunce < micros() - 240000000){
     this->publish_state(0);
   }
 
